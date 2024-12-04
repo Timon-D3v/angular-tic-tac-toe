@@ -1,11 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatButton } from '@angular/material/button';
 
 @Component({
   selector: 'app-square',
-  imports: [CommonModule],
+  imports: [CommonModule, MatButton],
   template: `
-    <button>{{ value }}</button>
+    <button mat-raised-button>{{ value }}</button>
   `,
   styleUrl: './square.component.scss'
 })
